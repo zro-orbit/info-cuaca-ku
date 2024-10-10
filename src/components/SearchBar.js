@@ -14,14 +14,14 @@ export default function SearchBar({ onSearch }) {
           type="text"
           name="city"
           placeholder="Cari Kota"
-          className="w-full p-4 rounded-full shadow-lg text-lg font-toystoss"
+          className="w-full p-4 rounded-full shadow-lg text-lg font-toystoss pl-6"
           required
         />
         <button
           type="submit"
-          className="absolute right-4 top-1/2 transform -translate-y-1/2"
+          className="absolute right-6 top-1/2 transform -translate-y-1/2 text-gray-500"
         >
-          <img src="/icons/search.svg" alt="Search" className="w-6 h-6" />
+          🔍
         </button>
       </div>
     </form>
