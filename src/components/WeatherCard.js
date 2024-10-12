@@ -21,7 +21,7 @@ export default function WeatherCard({ weather }) {
         <div className="my-6">
           <img 
             src={getWeatherIcon(weather.condition)}
-            alt="Weather condition" 
+            alt="Kondisi Cuaca" 
             className="w-24 h-24 mx-auto"
           />
           <p className="text-xl mt-2">{weather.condition}</p>
@@ -29,15 +29,15 @@ export default function WeatherCard({ weather }) {
 
         <div className="grid grid-cols-3 gap-4 mt-6">
           <div>
-            <img src="/icons/Temperature.png" alt="Temperature" className="w-8 h-8 mx-auto" />
+            <img src="/icons/Temperature.png" alt="Suhu" className="w-8 h-8 mx-auto" />
             <p>{weather.temperature}°</p>
           </div>
           <div>
-            <img src="/icons/Kelembapan.png" alt="Humidity" className="w-8 h-8 mx-auto" />
+            <img src="/icons/Kelembapan.png" alt="Kelembapan" className="w-8 h-8 mx-auto" />
             <p>{weather.humidity}%</p>
           </div>
           <div>
-            <img src="/icons/Kecepatan dan arah angin.png" alt="Wind speed" className="w-8 h-8 mx-auto" />
+            <img src="/icons/Kecepatan dan arah angin.png" alt="Kecepatan Angin" className="w-8 h-19 mx-auto" />
             <p>{weather.windSpeed} KM/JAM</p>
           </div>
         </div>
