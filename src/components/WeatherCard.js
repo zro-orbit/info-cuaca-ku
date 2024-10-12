@@ -18,27 +18,39 @@ export default function WeatherCard({ weather }) {
         <h2 className="text-2xl mb-2 font-pulang">{weather.cityName}</h2>
         <p className="text-sm font-cornercafe">{weather.date}</p>
         
-        <div className="my-6">
+        <div className="my-6 text-center">
           <img 
             src={getWeatherIcon(weather.condition)}
             alt="Kondisi Cuaca" 
-            className="w-24 h-24 mx-auto"
+            className="w-24 h-24 mx-auto" 
           />
-          <p className="text-xl mt-2">{weather.condition}</p>
+          <p className="text-xl mt-2 font-pulang">{weather.condition}</p>
         </div>
 
-        <div className="grid grid-cols-3 gap-4 mt-6">
+        <div className="grid grid-cols-3 gap-4 mt-6 text-center">
           <div>
-            <img src="/icons/Temperature.png" alt="Suhu" className="w-8 h-8 mx-auto" />
-            <p>{weather.temperature}°</p>
+            <img 
+              src="/icons/Temperature.png" 
+              alt="Suhu" 
+              className="w-7 h-9 mx-auto" 
+            />
+            <p className="text-lg font-cornercafe">{weather.temperature}°</p>
           </div>
           <div>
-            <img src="/icons/Kelembapan.png" alt="Kelembapan" className="w-8 h-8 mx-auto" />
-            <p>{weather.humidity}%</p>
+            <img 
+              src="/icons/Kelembapan.png" 
+              alt="Kelembapan" 
+              className="w-7 h-9 mx-auto" 
+            />
+            <p className="text-lg font-cornercafe">{weather.humidity}%</p>
           </div>
           <div>
-            <img src="/icons/Kecepatan dan arah angin.png" alt="Kecepatan Angin" className="w-8 h-19 mx-auto" />
-            <p>{weather.windSpeed} KM/JAM</p>
+            <img 
+              src="/icons/kecepatan_angin.png" 
+              alt="Kecepatan Angin" 
+              className="w-10 h-8 mx-auto" 
+            />
+            <p className="text-lg font-cornercafe">{weather.windSpeed} KM/JAM</p>
           </div>
         </div>
       </div>

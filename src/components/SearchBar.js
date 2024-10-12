@@ -21,7 +21,11 @@ export default function SearchBar({ onSearch }) {
           type="submit"
           className="absolute right-6 top-1/2 transform -translate-y-1/2 text-gray-500"
         >
-          🔍
+            <img 
+            src="/icons/search.png" 
+            alt="Search" 
+            className="w-6 h-6 mx-auto"
+          />
         </button>
       </div>
     </form>
